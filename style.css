@@ -47,6 +47,10 @@ main {
 }
 
 
+img{
+    width: 100%;
+}
+
 /* 
 
 NAVBAR ↓
@@ -117,7 +121,33 @@ nav {
     opacity: 1;
 }
 
+.login{
+    margin-left: 48px;
+}
 
+.nav__link--primary{
+    margin: 0;
+    padding: 10px 32px;
+    margin-top: 2px;
+    border-radius: 9999px;
+    color: #fff;
+    background-color: #6415ff;
+    line-height: 1.5;
+    border: none;
+    width: auto;
+    transition: all 300ms ease;
+}
+
+.nav__link--primary::after{
+    content: "";
+    width: 0;
+    height: 0;
+}
+
+.nav__link--primary:hover{
+    background-color: rgba(80,17,204);
+    color: white;
+}
 
 .btn__menu {
     display: none;
@@ -198,6 +228,90 @@ header .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.header__description {
+    width: 40%;
+}
+
+.header__description--para{
+    margin: 32px 0;
+}
+
+.header__email{
+    width: 100%;
+    max-width: 448px;
+    height: 68px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__email--input{
+    width: 100%;
+    border-radius: 500px;
+    border: 2px solid rgb(229, 231, 235);
+    padding: 20px 192px 20px 32px;
+    color: rgb(36, 62, 99);
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: border-color 300ms;
+}
+
+.header__email--input:hover {
+    border-color: rgba(160, 174, 192);
+}
+
+.header__email--input:focus, 
+.header__email--input:active{
+    outline: none;
+    border-color: #6415ff;
+}
+
+.header__email--btn {
+    z-index: 2;
+    margin: 8px;
+    height: calc(100% - 16px);
+    border-radius: 500px;
+    width: 160px;
+    border: none;
+    background-color: #6415ff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.header__email--btn:hover{
+    background-color: rgb(60,13,153);
+}
+
+.header__customers--title{
+    margin-top: 80px;
+    color: #a0aec0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6;
+}
+
+.header__customers{
+    margin-top: 16px;
+    padding-right: 128px;
+    opacity: 0.5;
+}
+
+.header__img--wrapper{
+    width: calc(100% - 40%);
+}
+
+
+.header__img{
+    width: 100%;
+    max-width: 768px;
 }
 
 
